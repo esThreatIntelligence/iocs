@@ -3,7 +3,10 @@ a.txt - 6C7918C0440BE6BFAF9B83E365E00668
 s.txt - 147983884C533C294BF08CAEB2195EA7                                                       
 z.txt - 0D3C23D986D7B1A1C54F2F5A34F79758 
 
-                              
+Website hosting redirect to Update.zip (hosted on discord):
+
+chatgpt-app.cloud/q1Vz6N
+
 LummaC2:
 
 demonstationfukewko.shop
