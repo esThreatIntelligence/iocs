@@ -1,0 +1,39 @@
+URL hosting ZIP archive: 2944839123[.]christianvelour[.]com/33/ff5427fd446c109da7ef5ed0667c0025/2138989162 
+
+Christian Velour.zip
+
+cdb63ed9a743d86f03758c83fa463db4 (MD5) 
+fc2b7cb6a64c00c04faa0ce682289a310399446f (SHA1) 
+293a788a0b22870cfadd6dff5381d4b8b3ccaf376120736664bfc294a188e517 (SHA256) 
+
+ 
+Loader: 
+
+Christian C. Velour.lnk 
+
+2dea97b031cc7d38a15d29acf5fdde8c (MD5) 
+06e90155f72ecb877e17e8b948cea490a1ed4c9f (SHA1) 
+28e5bdf13c41f194d8ed91a793a6bab5e0b2b1b6507f140227f1ce12a1007c9b (SHA256) 
+
+ 
+Payload: 
+
+Payload URL Download: URL: hxxp://a8advbiejf[.]christianvelour[.]com/sfglfjgg4ks4f 
+
+ 
+55609.dll  
+
+1ba54a41210b0ba051765bca68f158da (MD5) 
+39f63ad5522ef2313afccd16eacad62458bac0a9 (SHA1) 
+3aa1a02f12c2a46c0a66eb88b34434163200651be0d54dca1f50eeaefd722d9e (SHA256) 
+
+ 
+Malicious JavaScript File # 1: 7E9CB3FBF4FD0B07.txt - ea979d9743c2526b5b1781c3ea238ad5 (MD5) 
+
+ 
+Malicious JavaScript File # 2: 1A4D05F30007.txt - 428ae3a47e9afa51e2b395ba2f1bbd91 (MD5) 
+
+
+C2 URL 
+
+hxxps[://]dcc[.]olcrv[.]com/login/tologin 
