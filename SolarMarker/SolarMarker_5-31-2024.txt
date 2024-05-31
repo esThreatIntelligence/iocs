@@ -1,0 +1,17 @@
+Payloads:
+
+SolarPhantom - 6bef5498c56691553dc95917ff103f5e
+StellarInjector - 0440b3fbc030233b4e9c6748eba27e4d
+Backdoor (initial payload) - IcebreakersTeamBuildingActivitiesandEnergizers.exe - 8ac77f704640fa1c8feb9172302bf313
+
+URLs:
+
+https://jacob-jonesinvestigation.]com
+https://stopvulcancomalcounty.]info
+https://finestyle.]com/
+
+C2s:
+
+2.58.15[.]118
+146.70.80[.]83 
+139.60.161[.]78
