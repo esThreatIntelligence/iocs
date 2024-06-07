@@ -1,0 +1,21 @@
+URLs:
+
+hxxps://pchelprwizzards.com/0x80070643/index.html
+hxxps://ghufal.answermedia.site/KB/KB66958646
+hxxps://ghufal.answermedia.site/KB/post.php?status=2
+hxxps://ghufal.answermedia.site/KB/post.php?status=3
+
+Files:
+
+acapnia.zip	- cda2b1a38e7fc1440d92df4a8b957eba
+quadrat.wmv	- e77ed886d929e368535385afea6a81be
+SpyShelter.exe - c637e5ecf625b72f4bef9d28cd81d612
+Vidar payload - a7be3ce948ebf4b4710a4c6f5b12ed63
+Retrieved ZIP archive - 09399f919c15cf35d0119dc33ab8fba6
+
+Vidar C2
+
+95.217.28[.]33
+65.109.241[.]185
+hxxps://steamcommunity.com/profiles/76561199698764354
+hxxps://t.me/r8z0l
