@@ -1,5 +1,4 @@
 URLs:
-
 hxxps://pchelprwizzards.com/0x80070643/index.html
 hxxps://pchelprwizardsguide.com/0x80070643/
 hxxps://ghufal.answermedia.site/KB/KB66958646
@@ -7,9 +6,7 @@ hxxps://ghufal.answermedia.site/KB/post.php?status=2
 hxxps://ghufal.answermedia.site/KB/post.php?status=3
 hxxps://www.dropbox.com/scl/fi/dvlxdaby39l3s7zjyl8q5/Fix_yt-Code.ps1?rlkey=z9locztau2sj8crwx8l2lfdpr&st=ub41xvep&dl=1
 
-
 Files:
-
 acapnia.zip	- cda2b1a38e7fc1440d92df4a8b957eba
 quadrat.wmv	- e77ed886d929e368535385afea6a81be
 SpyShelter.exe - c637e5ecf625b72f4bef9d28cd81d612
@@ -18,7 +15,6 @@ Retrieved ZIP archive - 09399f919c15cf35d0119dc33ab8fba6
 Fix_yt-Code.ps1 - 2abb86bdc353625c5d744fb4e745c11e
 
 Vidar C2
-
 95.217.28[.]33
 65.109.241[.]185
 hxxps://steamcommunity.com/profiles/76561199698764354
