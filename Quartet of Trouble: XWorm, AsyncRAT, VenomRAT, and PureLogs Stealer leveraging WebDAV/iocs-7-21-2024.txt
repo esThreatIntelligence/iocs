@@ -1,0 +1,92 @@
+Files:
+
+DXJS.zip - b325d948f463871ff10be13f8ea4b555
+FTSP.zip - 1875b80d552feed0c1bd5592056d109a
+new.bat - 0d79c56f9198117a98334ead5d033974 
+startuppppp.bat - 1e5fa94c5be0d6f6d57c181c60622b80
+Xwrm3v.exe - e4093e66d377d1f1552220fb7342385f (XWorm)
+Xvwrm5v.exe - a8bfb9877be0daf890333c91c88c77d8 (XWorm)
+AsyncClient.exe - c9562d033d5e13674af5b5fdc3e5801c (AsyncRAT)
+Anarchynostart.exe - e618be3fea2925a6637d8fcf05ff5c8a (AsyncRAT)
+Dghucwmscrj.exe - 1e66092482f2738ff808c2fc076185e6 (PureLogs Stealer)
+ClientVRNM8520.exe - 58e6b6b4b7f6849749b6374ffbd7fa2e (VenomRAT)
+1.py - 9320932e570d27bd88ee600b3961eecc  
+2.py - a84994e9e9de4fd82f721dbf2c8d9c58  
+3.py - 94e1a61c69eb01d7acba395d826824ce  
+4.py - 74502d4da814015cd36620734e248b5f  
+5.py - cff45bdc81bc10205d914dd3a84c74f7  
+6.py - ab95a98ee521483eee3903ab9733639b  
+kam.py - 42f067738951f58979ce7267456ff05a  
+moment.py - 987b4d5ab393fb625813d240f0329fa1  
+money.py - e80bc60a63f437f01e30ad6414988d65  
+time.py - 91ff771b1f48c809167a37862b14f070  
+update.py - 83105bbdfb9b25c0abf68a3ca5401801  
+upload.py - de2a195f2ff18433ccfd0f1d9dae07ef  
+
+URLs:
+
+stickers-ext-payment-print.trycloudflare.com
+
+Configurations:
+
+VenomRAT:
+
+  "Server": "ujhn.duckdns.org",
+  "Ports": "8520",
+  "Version": "5.0.5",
+  "Autorun": "false",
+  "Install_Folder": "%AppData%",
+  "AES_key": "dPw8e3rVhGla8ngCgNg8mnYlEUPfYa38",
+  "Mutex": "Venom_RAT_HVNC_Mutex_Venom RAT_HVNC",
+  "Certificate": "MIICMzCCAZygAwIBAgIVALgbuadTIXCBGx92qk2Pt658vf8pMA0GCSqGSIb3DQEBDQUAMGcxGDAWBgNVBAMMD1Zlbm9tUkFUIFNlcnZlcjETMBEGA1UECwwKcXdxZGFuY2h1bjEcMBoGA1UECgwTRGNSYXQgQnkgcXdxZGFuY2h1bjELMAkGA1UEBwwCU0gxCzAJBgNVBAYTAkNOMB4XDTIxMDExMjE3MzIzNloXDTMxMTAyMjE3MzIzNlowEDEOMAwGA1UEAwwFRGNSYXQwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAPLknDSnzkq9SuHSkPVyOxBFVoX/n/Y/SNOD2TO9vxmiaLG1rfOcnt7KPbQA3CJxOmVjCVDvtURayayaErAu6R280hq1HgF3iL7u8+5R9XY6JvXkaiKj2rYiEVKKWU55xGCztKNQAfUY7prw8li8QJk+J8vzitqKS1zz7G2UcGx1AgMBAAGjMjAwMB0GA1UdDgQWBBSyJslOSHG/21uHIrLBFtFJb3nJHzAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBDQUAA4GBAG/y6mnqPy3k1abtSAqAnm79siuBJ99b4uxdaTRVNIjATBtYUb3stSpQGefhnzNh4YS6w3SvTZk/BwuWyC0MKvHEbQhbk4JyoIcF4s2wzd5/mcTYK/kwPzAGUp+b93Fp38f3TRgFz+fWVZGheqUlWxzMzV1boXz2JX4pGQTypJBM",
+  "ServerSignature": "zSzKzZNOSagiGm3YJF0i75wAjH4uEGiuFn8zBLdEzyzwOgeEsmG9nAZvuBsPVsz4lngS7WQZjfqSN6+2pvQi/5JQK3gBi4jGKzZjeCWPswhlqfoS/Zv1edfI5DYK3n5hEdsvJ1Mg7NXoW8rB3+IyDTaZE1gPlGh1f25N9d3uI7Y=",
+  "BDOS": "null"
+
+AsyncRAT:
+
+  "External_config_on_Pastebin": "null",
+  "Server": "todfg.duckdns.org",
+  "Ports": "6745",
+  "Version": "0.5.7B",
+  "Autorun": "false",
+  "Install_Folder": "updateee.exe",
+  "Install_File": "ckxkZjBnRnNUdXhwVDhPMmxEUVVpRHZERFlMTzVxVWc="
+  
+AsyncRAT:
+
+  "Server": "anachyyyyy.duckdns.org",
+  "Ports": "7878",
+  "Version": "",
+  "Autorun": "false",
+  "Install_Folder": "%AppData%",
+  "AES_key": "HDicWZ3EZAtA40nvdYxpOKujJp27zboz",
+  "Mutex": "yiCMo5CNWP0l1",
+  "Certificate": "MIICKTCCAZKgAwIBAgIVAM/VOCRxI+AHDimPXThdgxwFsFJVMA0GCSqGSIb3DQEBDQUAMF0xDjAMBgNVBAMMBUVCT0xBMRMwEQYDVQQLDApxd3FkYW5jaHVuMRwwGgYDVQQKDBNEY1JhdCBCeSBxd3FkYW5jaHVuMQswCQYDVQQHDAJTSDELMAkGA1UEBhMCQ04wHhcNMjMwOTA3MDU1OTU0WhcNMzQwNjE2MDU1OTU0WjAQMQ4wDAYDVQQDDAVEY1JhdDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAmqqEZH+ZeJZura1iPpbgRn95YBGzjkxcdGimZOkZVwYDRiR1QWuVrW0KOVoiZEUddrm1kaIeBdDjQBl//Uo2RUuWuBIWZ8savUdFzcy0uSObFsOkwOfJlOsEr7QbNTq9jxAd9CRnK5DKzujTpqH/0S/yPxpUG+fsZVopHp9J4pUCAwEAAaMyMDAwHQYDVR0OBBYEFKAjfGjEL+Dr/TOkd8evr26vLspxMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQENBQADgYEASfFMIG2qp+5dLxS7LDuktE5c9FUNN6THuqhhKpmejXo/rXS81DGLsxVeH5PMJ8HFvx5A8It0or0F6gjNUFGzWsn5rOgLM17D5pSH1U5pf17YUyg8MAAIFs/5q+9mh3wOr2K+lBJH1ouqST4elKnq/SELQjbkVhxUV2hEiinByYs=",
+  "ServerSignature": "TavybbdDbahIxbEiA8aHKlRjy1n60u6Qmq0AkuQf6jYtdmz2I7HW/25H6fAszzrHeQ7t2vFZlQ767AIVpbOjoVrb8JRHsbtQTVvA+bK2dnsBjmp2lgR8sFPzbyqytuTSJ9J6lYzz0ALxEx2y/vvNEswEUiScFQSgMGaqsQiqFjw=",
+  "BDOS": "null",
+  "External_config_on_Pastebin": "false"
+
+
+XWorm v3:
+
+  "C2 url": [
+    "welxwrm.duckdns.org"
+  ],
+  "Port": "8292",
+  "Aes key": "<123456789>",
+  "SPL": "<Xwormmm>",
+  "Install file": "USB.exe",
+  "Version": "XWorm V3.1"
+  
+XWorm v4:
+
+  "C2 url": [
+    "rvxwrm5.duckdns.org"
+  ],
+  "Port": "9390",
+  "Aes key": "<123456789>",
+  "SPL": "<Xwormmm>",
+  "Install file": "USB.exe",
+  "Version": "XWorm V5.6"
+
+PureLogs Stealer C2: ncmomenthv.duckdns[.]org
