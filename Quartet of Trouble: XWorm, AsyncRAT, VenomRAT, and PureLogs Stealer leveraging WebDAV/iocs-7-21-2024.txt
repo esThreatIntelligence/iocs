@@ -22,6 +22,7 @@ money.py - e80bc60a63f437f01e30ad6414988d65
 time.py - 91ff771b1f48c809167a37862b14f070  
 update.py - 83105bbdfb9b25c0abf68a3ca5401801  
 upload.py - de2a195f2ff18433ccfd0f1d9dae07ef  
+Donut Loader - c741fbaeeb14a9a95d6fb201e9e0bd6e
 
 URLs:
 
