@@ -1,0 +1,31 @@
+URLs:
+
+http://104.243.37.35:222/bfbupdeuiterborm/lAOdPuUqwXLVFvqT.jpg
+http://104.243.37.35:222/bfbupdeuiterborm/uzopuzbkrpcziwca.txt 
+
+Filenames:
+
+.WSF file - 154cc0f462c85b494a45b7531f3a9f03
+uzopuzbkrpcziwca.txt - a332817fd302e05b131c7a7a0cdb1a04
+lAOdPuUqwXLVFvqT.jpg - c86280bd532eec707f106542a4458400
+IRUAHCKDFAFDCHUV.vbs - 1eefdb23f7c63922756eafb532127b8e
+CEIULUDEZFCEVSMM.bat - ac0f2aa2c5caf791f0310c2c07a1e1c3
+YXRPNPSMGCOBEURV.ps1 - 315bc30cd580b750b4afc294fa38a8bc
+WJVIQQFZMZLSZTJJ.bat - ec348cf15e839b8912862352bc916d22 
+NewPE2.dll - dcce5bc3e27295a1cbe13a411244fe93
+AsyncRAT - c383949898806f9a6aa1f967dd66244b
+
+Configuration:
+
+AES key = "yhWS3NpnKio784yDSnc9icMvJs2uBIL9"
+Ports = "6666"
+Version = "AWS | 3Losh"
+Install = False
+MTX = "AsyncMutex_VVXVZFyTYtHWDAzB"
+Pastebin = "null"
+Anti = False
+offlineKL = True
+BDOS = False
+Group = we need money
+HWID = "D69B57D9B6A26B6A0F09"
+Serversignature = "dNIATZnrJj1YCA1yrWNIh9aPXSE9nvSUf+U7pvm3oAa3xIfHBo3RNhdEfIUitHkGvf7s6aFd+4MjhKH2qU9pfMwuUerCUOZ9JTybd1iFYR3o+dF10u4W9C/6A0NdS2mYdj6i80srUB5Vp0yNjAeaU9lpXUi0m06BVxrLlGs3sB5EOiqvxBlXnii6xUAMIWeCxa5r6XQd7nyqi3W6ESEf+ueXkaPfiis4S7QY93aQ+vaF6zOyw4yYI+kZdoomD++XoIGg1m/a9f0ono6cxIINt8NUw7RpAMN6KBK2nLtKp2fxnwhgDl6fWnsknDl53FWizRFq7tNrCLLEeh7x+/iGV+EeF9f07YsQ0VSB8Mty5j8zwJQaTzMPvFMdyTUxdZDqL06F4NW5CXze58KETIeznk8yg56ph6uS6tElv6Ogo8aKzFcFuTI3GsuJqqj2G6jkfAHit5P+0Ks9ZXHGHUz+PeaAjHyZrmPjjWhCuybuU+eveOlmt1/j+K5tiYnj1aW5ZlhifR+8Xlovu3K/Gt9E20+yaX2wzcSy0MZ24bJVeCMEYqnjx7BYQCliPy19O8t0Iz7zUnHp2H+f6sbF1rB+xJDK5buh98PZH3yml7as9kwqpYi9O08DpKDZD0F/DAULUWd/WauOKawhatKevxurAiceOOE8aJ2gwSXMFN+sw8c="
