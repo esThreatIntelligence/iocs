@@ -1,0 +1,21 @@
+C2: 
+
+Cobalt Strike - 45.152.114[.]10
+Cobalt Strike - therealtruthnews[.]com:443/knock.json
+
+Cobalt Strike - 225.197.198[.]102
+Cobalt Strike - dns.newstibulum[.]com/tow
+Zloader - 107.178.223[.]183
+
+Files
+
+100_x64.ps1	- f059dcf7acbf05887076d713a29884c6
+Dns84.exe - 5c5b0a4a700532589f708aef417f3da9
+Stotri.exe - 87a929b09075325dda765e2cb9d3d22b
+Stotri.dll - 8d2300b4ad8c8dacda2e7ba45b474e8a
+GrapheneMatrix.exe - 1eed5fee8bf942798dbde5752941910e
+SoftwareGrabber.dll - bbbc51064235f7a8dc30bfc8ecc59e00
+HttpGrabber.dll - 4f403afc3d9c0616ca85aca29ccb527b
+Vnc64.dll - 55fa76f4da12133c53a9f446e7fd950d
+Vnc32.dll - b6b5490e55f95335abada5cf706aceb5
+ftp64.dll - db01e97a0dcde93e51d7d817b924aa55
