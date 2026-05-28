@@ -1,0 +1,68 @@
+================================================================================
+Nimbus RAT - Indicators of Compromise
+eSentire Threat Response Unit (TRU)
+================================================================================
+
+Files:
+InboxCorePro.zip - 9E5B1E10AD6904D3F5B48D38470CD57263974640A27D13CF793EF026D3D6B886
+InboxCorePro.jar - 91E523A46F3BB860AC2E5800B7E1EC89D75A2408410B9CD25EEBC17C8D7A92BC
+
+
+Host Artifacts:
+C:\ProgramData\InboxCorePro\
+C:\ProgramData\InboxCorePro\InboxCorePro.jar
+C:\ProgramData\InboxCorePro\InboxCorePro.reg
+C:\ProgramData\InboxCorePro\idegugfbptku.txt
+C:\ProgramData\InboxCorePro\license.txt
+C:\ProgramData\InboxCorePro\jdk-25.0.1\bin\javaw.exe
+%TEMP%\java_app.lock
+%TEMP%\libs\
+%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup (Persistence)
+
+Malware Metadata:
+Internal name:     BackupBOX
+Campaign UUID:     1hc1his4gmto0q1
+JAR entry point:   Goferindubitably.Audiometric
+JAR build tool:    Maven Archiver 3.5.0
+
+C2 Infrastructure:
+googleapis.com (from javaw.exe - Google Drive API)
+docs.google.com/spreadsheets/d/1Eaj1_UZNjz2CIUa_t1yYGeGvaiby0oIRj8-Oq1lVqkI/export?format=csv
+
+Google Drive Folders:
+1eeicjy9iRJ02inOxwg4bZW5bMJq9n8NX  
+1g7DgU7cVnVIEiRVAXILMUbdF7h06OhWm  
+13VDqsW6qlYRZ_yb1_m0TYE99VkUP2sxD  
+
+GCP Service Accounts:
+onlyember@automated-atlas-492514-d5.iam.gserviceaccount.com
+pronopro@helpful-topic-492515-g1.iam.gserviceaccount.com
+ironicblade@warm-access-490711-s6.iam.gserviceaccount.com
+
+GCP Projects:
+automated-atlas-492514-d5
+helpful-topic-492515-g1
+warm-access-490711-s6
+
+Google Workspace OAuth Indicator:
+Application name: BackupBOX
+Scope: https://www.googleapis.com/auth/drive
+
+C2 File Naming Patterns:
+entry_{UUID}     - command files
+exit_{UUID}      - response files
+newconfig_{UUID} - config update files
+
+Delivery Infrastructure:
+pastebin[.]com/G6jA0PLU
+
+Teams Vishing Infrastructure:
+Sender domain patterns:  *.onmicrosoft.com, *.top (PDR Ltd / PublicDomainRegistry)
+Brand name patterns:     IT Support, ITProtectionDepartment, infratechopsdesk,
+                         advcloudopshelp, operationshelpcenter
+Sender local-parts:      helpdesk, itsupport, it_assistance, helpdeskmanager,
+                         it.support, admin, cloudsupport
+Source ASNs:             NKtelecom INC, WorkTitans B.V.,
+                         GLOBAL CONNECTIVITY SOLUTIONS LLP,
+                         GTHost, GWY IT PTY LTD
+
