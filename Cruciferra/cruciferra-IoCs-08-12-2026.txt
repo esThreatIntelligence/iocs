@@ -1,0 +1,17 @@
+Domain:
+
+karmactive.com - Compromised WordPress site with ErrTraffic inject 
+makeverizyjar.info - ErrTraffic C2
+analysis-id-fmd.info - ErrTraffic C2
+tzpx.courses - Remus C2
+zelpx.garden - Remus C2
+
+IPv4:
+
+178.16.52.101 - ErrTraffic C2
+
+File:
+
+87e8d39db624f37d3e77aedf487a2dfd197f71a4730ea74f4e7a4341deaec2ff - Vulnerable driver "DCRCVDrv.sys"
+0ae0a7f118b80e4655b8b86bb421c151a8f17930e76e714b2fa199409f3af9ce - Cruciferra DLL (mscoree.dll)
+
