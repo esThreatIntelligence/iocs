@@ -1,119 +1,119 @@
-Process Name,App Name,DLL Count
-ws.exe,PDFescape Desktop v4.0.24.4617,88
-platform_experience_helper.exe,Google Chrome v151.0.7877.0,2
-msedgewebview2.exe,Microsoft Edge WebView2 v149.0.4022.69,33
-msedge.exe,Microsoft Edge v149.0.4022.69,33
-mscopilot.exe,Copilot v149.0.4022.80,33
-updater-ws.exe,PDFescape Desktop v4.0.24.4617,88
-pdf2pdfconv.exe,PDFescape Desktop v4.0.24.4617,6
-msedge.exe,Microsoft Edge v149.0.4022.80,33
-escape.exe,PDFescape Desktop v4.0.24.4617,88
-creator-ws.exe,PDFescape Desktop v4.0.24.4617,6
-creator-app.exe,PDFescape Desktop v4.0.24.4617,10
-crash-handler-app.exe,PDFescape Desktop v4.0.24.4617,88
-xargs.exe,xargs v0.0.0.0,4
-WizTree64.exe,WizTree v4.31.0.0,8
-wc.exe,wc v0.0.0.0,4
-vsdbg.exe,Microsoft ® Visual Studio ® v18.5.10309.2631119583466080036585431653,4
-vb7to8.exe,Microsoft® Windows® Operating System v18.0.11709.182,2
-uniq.exe,uniq v0.0.0.0,4
-uname.exe,uname v0.0.0.0,4
-tr.exe,tr v0.0.0.0,4
-touch.exe,touch v0.0.0.0,4
-test.exe,test v0.0.0.0,4
-tail.exe,tail v0.0.0.0,4
-ssh-agent.exe,ssh-agent v0.0.0.0,4
-ssh-add.exe,ssh-add v0.0.0.0,4
-ssh.exe,ssh v0.0.0.0,17
-sort.exe,sort v0.0.0.0,5
-serialver.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2
-sed.exe,sed v0.0.0.0,4
-sdiff.exe,sdiff v0.0.0.0,4
-scalar.exe,Git v2.53.0.3,6
-rmiregistry.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2
-rmdir.exe,rmdir v0.0.0.0,4
-rm.exe,rm v0.0.0.0,4
-RevoUninPro.exe,Revo Uninstaller Pro v5.5.0.0,12
-RevoAppBar.exe,Revo Uninstaller Pro v1.3.5.0,8
-RenderDocHost.exe,RenderDocHost v0.0.0.0,3
-readlink.exe,readlink v0.0.0.0,4
-pwd.exe,pwd v0.0.0.0,4
-psl.exe,psl v0.0.0.0,6
-printf_ngettext.exe,GNU gettext utilities v1.0,3
-printf_gettext.exe,GNU gettext utilities v1.0,3
-printf.exe,printf v0.0.0.0,4
-pluginviewer.exe,pluginviewer v0.0.0.0,3
-platform_experience_helper.exe,Google Chrome v150.0.7871.0,6
-pgomgr.exe,Microsoft® Visual Studio® v14.44.35219.0,4
-pgocvt.exe,Microsoft® Visual Studio® v14.44.35219.0,4
-pathchk.exe,pathchk v0.0.0.0,4
-mv.exe,mv v0.0.0.0,4
-msvsmon.exe,Microsoft® Visual Studio® v18.5.10309.885011709.182,4
-mspdbsrv.exe,Microsoft® Visual Studio® v14.50.35729.0,3
-msedgewebview2.exe,Microsoft Edge WebView2 v148.0.3967.96,33
-msedge.exe,Microsoft Edge v148.0.3967.96,33
-mscopilot.exe,Copilot v148.0.3967.96,33
-mktemp.exe,mktemp v0.0.0.0,4
-mkdir.exe,mkdir v0.0.0.0,4
-ls.exe,ls v0.0.0.0,4
-link.exe,Microsoft® Visual Studio® v14.44.35226.0,2
-ktab.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2
-klist.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2
-kinit.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2
-keytool.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2
-jwebserver.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2
-jstat.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2
-jstack.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2
-jrunscript.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2
-jps.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2
-jmap.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2
-jinfo.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2
-jhsdb.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2
-jfr.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2
-jdb.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2
-jcmd.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2
-javaw.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2
-javadoc.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2
-javac.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2
-java.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2
-identity_helper.exe,Microsoft Edge v148.0.3967.96,3
-id.exe,id v0.0.0.0,4
-head.exe,head v0.0.0.0,4
-grep.exe,grep v0.0.0.0,5
-git-upload-pack.exe,Git v2.54.0.1,6
-git-upload-archive.exe,Git v2.54.0.1,6
-git-sh-i18n--envsubst.exe,Git v2.54.0.1,6
-git-remote-https.exe,Git v2.54.0.1,6
-git-remote-http.exe,Git v2.54.0.1,6
-git-remote-ftps.exe,Git v2.54.0.1,6
-git-remote-ftp.exe,Git v2.54.0.1,6
-git-receive-pack.exe,Git v2.54.0.1,6
-git-imap-send.exe,Git v2.54.0.1,7
-git-http-push.exe,Git v2.53.0.3,7
-git-http-fetch.exe,Git v2.54.0.1,6
-git-http-backend.exe,Git v2.54.0.1,6
-git-daemon.exe,Git v2.54.0.1,6
-git.exe,Git v2.54.0.1,6
-getopt.exe,getopt v0.0.0.0,4
-find.exe,find v0.0.0.0,4
-file.exe,file v0.0.0.0,7
-expr.exe,expr v0.0.0.0,5
-env.exe,env v0.0.0.0,4
-echo.exe,echo v0.0.0.0,4
-dirname.exe,dirname v0.0.0.0,4
-diff3.exe,diff3 v0.0.0.0,4
-diff.exe,diff v0.0.0.0,4
-date.exe,date v0.0.0.0,4
-cut.exe,cut v0.0.0.0,4
-cp.exe,cp v0.0.0.0,4
-comm.exe,comm v0.0.0.0,4
-CodeCoverage.exe,Microsoft® Visual Studio® v18.1.26126.712602,2
-cmp.exe,cmp v0.0.0.0,4
-cat.exe,cat v0.0.0.0,4
-bscmake.exe,Microsoft® Visual Studio® v14.50.35729.0,3
-brotli.exe,brotli v0.0.0.0,4
-basenc.exe,basenc v0.0.0.0,4
-basename.exe,basename v0.0.0.0,4
-b2sum.exe,b2sum v0.0.0.0,4
-awk.exe,awk v0.0.0.0,9
-ADelRCP.exe,ADelRCP Dynamic Link Library v26.1.21367.0,2
+Process Name,App Name,DLL Count,SHA256
+ws.exe,PDFescape Desktop v4.0.24.4617,88,f88a861823f995c48ddb7afe8f4be90a5d1ea5deff3df0b0c152fa0e5c2f1b65
+platform_experience_helper.exe,Google Chrome v151.0.7877.0,2,1fae7d654695f7c4e0f4bb8a42a4c33137652effc360b998708c6ffcac1380e6
+msedgewebview2.exe,Microsoft Edge WebView2 v149.0.4022.69,33,e25226852835df592c11601b55e3b1e41c1308c07a395e298238d8a7365c1735
+msedge.exe,Microsoft Edge v149.0.4022.69,33,a0806567fa2e180cbb281e8f47d15b316527bdd58165f60769fb46bff91ec565
+mscopilot.exe,Copilot v149.0.4022.80,33,bdd7dcf5063982c28ace299035675a6b96de68bda936bbfcc68bd9562f45dd45
+updater-ws.exe,PDFescape Desktop v4.0.24.4617,88,2e58b5c26ea4b9ecfc5102c964126d656a682e090ea1ad8870ab187523093f6b
+pdf2pdfconv.exe,PDFescape Desktop v4.0.24.4617,6,c00ad5e215fc79c900363bd454a69ee33ef737709e26c1b0c51ea1264709a3e1
+msedge.exe,Microsoft Edge v149.0.4022.80,33,a0806567fa2e180cbb281e8f47d15b316527bdd58165f60769fb46bff91ec565
+escape.exe,PDFescape Desktop v4.0.24.4617,88,c25864e0a32742b8a0903a1eed7e176bc0ed296af345081bd44890f6fc31f61e
+creator-ws.exe,PDFescape Desktop v4.0.24.4617,6,db1abdb2326eb2fd6153ba84f27b20d3ee1ca53a64df1776b3c820aef340de61
+creator-app.exe,PDFescape Desktop v4.0.24.4617,10,10549a2a7671e7f036b4fe04062a0475b1c9717c9079ff4e628ea1647c30bfc2
+crash-handler-app.exe,PDFescape Desktop v4.0.24.4617,88,7518ecf85f246042e8fb933c841c7c40b71cbae0e798900d3d707455c63c4610
+xargs.exe,xargs v0.0.0.0,4,
+WizTree64.exe,WizTree v4.31.0.0,8,72208131742dbaf6871f648e297a054c8ad58cd318e4391772cdf4db34989a39
+wc.exe,wc v0.0.0.0,4,
+vsdbg.exe,Microsoft ® Visual Studio ® v18.5.10309.2631119583466080036585431653,4,3be2a5198dc46686ac514b8c70ecb28a8aff4dd56d4d0c60f66ebf5518ec85c9
+vb7to8.exe,Microsoft® Windows® Operating System v18.0.11709.182,2,17d4935ddc1f05cc18861b8270d935d52fa77bda00ca3e694cdedd807a8e0d78
+uniq.exe,uniq v0.0.0.0,4,
+uname.exe,uname v0.0.0.0,4,
+tr.exe,tr v0.0.0.0,4,
+touch.exe,touch v0.0.0.0,4,
+test.exe,test v0.0.0.0,4,
+tail.exe,tail v0.0.0.0,4,
+ssh-agent.exe,ssh-agent v0.0.0.0,4,138df27c7a8c35fbadde6fee35592336b04e058f4690b03f459ad79edd68ab63
+ssh-add.exe,ssh-add v0.0.0.0,4,b6fec08648deaf7a77b50bc34ea8ac17c3cf240d06d0f1bffc60bf56d6f914b1
+ssh.exe,ssh v0.0.0.0,17,6890c128c86cc2c38aad9fcb32a82b851ff3d38c714a1f656b8e445d7cd5e1c6
+sort.exe,sort v0.0.0.0,5,
+serialver.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,28d33acdf126861940eeca0890b6a97f32cd8a6a632980b79432d100bcc65ba2
+sed.exe,sed v0.0.0.0,4,
+sdiff.exe,sdiff v0.0.0.0,4,
+scalar.exe,Git v2.53.0.3,6,6338d76fb8584b3c01acd3e54894a18acdc4991e27cb0ef38bc813048be0426c
+rmiregistry.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,cbd5703bfe351c5e65e5ef9c391f2e3d604cadbb961e3fa80d2491968f85ad61
+rmdir.exe,rmdir v0.0.0.0,4,
+rm.exe,rm v0.0.0.0,4,
+RevoUninPro.exe,Revo Uninstaller Pro v5.5.0.0,12,f148051b0fbf4ff29990742a960c34c3eb9ab0bea952881fcc1018ea026f2588
+RevoAppBar.exe,Revo Uninstaller Pro v1.3.5.0,8,db119a9c1bf8c61269f6bcdf7cd329e86a45f7f0f9e0fe785fecda5f8af299be
+RenderDocHost.exe,RenderDocHost v0.0.0.0,3,
+readlink.exe,readlink v0.0.0.0,4,
+pwd.exe,pwd v0.0.0.0,4,
+psl.exe,psl v0.0.0.0,6,
+printf_ngettext.exe,GNU gettext utilities v1.0,3,
+printf_gettext.exe,GNU gettext utilities v1.0,3,
+printf.exe,printf v0.0.0.0,4,
+pluginviewer.exe,pluginviewer v0.0.0.0,3,
+platform_experience_helper.exe,Google Chrome v150.0.7871.0,6,1fae7d654695f7c4e0f4bb8a42a4c33137652effc360b998708c6ffcac1380e6
+pgomgr.exe,Microsoft® Visual Studio® v14.44.35219.0,4,
+pgocvt.exe,Microsoft® Visual Studio® v14.44.35219.0,4,
+pathchk.exe,pathchk v0.0.0.0,4,
+mv.exe,mv v0.0.0.0,4,
+msvsmon.exe,Microsoft® Visual Studio® v18.5.10309.885011709.182,4,
+mspdbsrv.exe,Microsoft® Visual Studio® v14.50.35729.0,3,
+msedgewebview2.exe,Microsoft Edge WebView2 v148.0.3967.96,33,e25226852835df592c11601b55e3b1e41c1308c07a395e298238d8a7365c1735
+msedge.exe,Microsoft Edge v148.0.3967.96,33,a0806567fa2e180cbb281e8f47d15b316527bdd58165f60769fb46bff91ec565
+mscopilot.exe,Copilot v148.0.3967.96,33,bdd7dcf5063982c28ace299035675a6b96de68bda936bbfcc68bd9562f45dd45
+mktemp.exe,mktemp v0.0.0.0,4,
+mkdir.exe,mkdir v0.0.0.0,4,
+ls.exe,ls v0.0.0.0,4,
+link.exe,Microsoft® Visual Studio® v14.44.35226.0,2,e388eb34fe4d280633609f6acec12a3e73c288f8b69ce402c3d24c0d0f5524f3
+ktab.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,851134651a1ab48bd9a9f9512b4dd0ee6ad7437be07451939a5e3939703320a3
+klist.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,1832f2c19297fc374270bc7764522688b264f88056c5d927dade18b390a567d8
+kinit.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,5329f60f30efaa4648e90c5bdc46e78cdf27c347a65a7eee0415be935b9e3156
+keytool.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,773c267d0e7c9e94c2fdd90aaae026940bab380a9eda9518353f5d27e00e0d0c
+jwebserver.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,5a6eca9994e99d69caec044583792b6d15eb6b083d4a549f29afff88dcfbe812
+jstat.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,794917d75c12c888e6750c2441d7f8fcdebef5deaed5d7f78d8fb46d51419ab4
+jstack.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,cfd51c3a24c964488aad7bdcdfc53201a40b9da65182bd5845b358facb906cfc
+jrunscript.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,282ec823882c4d4707b48673b820ba031af668dac316997174693a544747a562
+jps.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,aae5e7d8e54e9726361416d84f83177643a48195a48287dcb7fdb9aff978d120
+jmap.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,182534b7178b1b605197c2b7c0d99d50eac5acd88f4dd2cc2e4f824d45df4313
+jinfo.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,74bbdffefd9d4dcea166a72e2e8d5c9eb19d7c2cfbbe0dd1219dd97a306842f9
+jhsdb.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,ed284db5ec45e4d71a69898731b7be938e2599e54e845a86efd997a97e969fa6
+jfr.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,00df70d2b9cdd198daf62a521533eda5c82ded4389a26f2bcfaa77c8d64d33ed
+jdb.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,296e62d07c7e0f3aa73cde5187347d36a1a657857856460c9f5fb3097ae4b653
+jcmd.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,c366808f856fe2936c072d42c10e3788ff67f0b03e3669c581c390fe95d8561f
+javaw.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,4296df628d57e4efed8afd5e0cf6109862a186b825e6fe85721b3c028f663cfd
+javadoc.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,726ca5c30bcb5aa848102ccd40c968742b0b9ead841a7eed8edcc782ced12f96
+javac.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,4058d811ca17644bd9e05614cca248d5a30e01853b35b1dc94ab3848bf518f93
+java.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,63267782812f84001922687feeaa93c3218c7a1f03409f0650dcdbef2e7bc8cb
+identity_helper.exe,Microsoft Edge v148.0.3967.96,3,72a7c6a492a3cacce1994c675f5e94339f9c5e323e29d36e2ed2c5c988bbfd0d
+id.exe,id v0.0.0.0,4,
+head.exe,head v0.0.0.0,4,
+grep.exe,grep v0.0.0.0,5,
+git-upload-pack.exe,Git v2.54.0.1,6,e902eb7977e543a54e9ad7f579a53b64de3470ba5b9b1dd9095d107164f4cc21
+git-upload-archive.exe,Git v2.54.0.1,6,fcdab9b72ceeab411720661ae7fc03791952d8f5b1660610f20ad2300e1c22ad
+git-sh-i18n--envsubst.exe,Git v2.54.0.1,6,f5ac5bace9566501be8c54e469bd6ce40ae3be8d8902e577f0e5b78cd0aa10b6
+git-remote-https.exe,Git v2.54.0.1,6,f4c9d7f2f85b795603f501c25ad63fff82fce233ae0fc3d48e4e3c8669e5d788
+git-remote-http.exe,Git v2.54.0.1,6,fcdab9b72ceeab411720661ae7fc03791952d8f5b1660610f20ad2300e1c22ad
+git-remote-ftps.exe,Git v2.54.0.1,6,f4c9d7f2f85b795603f501c25ad63fff82fce233ae0fc3d48e4e3c8669e5d788
+git-remote-ftp.exe,Git v2.54.0.1,6,f4c9d7f2f85b795603f501c25ad63fff82fce233ae0fc3d48e4e3c8669e5d788
+git-receive-pack.exe,Git v2.54.0.1,6,5c6ef4561fe38aebf7d8d5b2ce265e0bff9d915d3b8caeeb8fe72798d9e16b21
+git-imap-send.exe,Git v2.54.0.1,7,0cd9a55c9c57dfa096e272fda45eed4e832134b0f4c5a157fbca6dffb9677534
+git-http-push.exe,Git v2.53.0.3,7,829f5676bad53bef52181366833a64acf99984cd45aed9383447cf269bed00db
+git-http-fetch.exe,Git v2.54.0.1,6,c86bc8c30b5956fef9c28fc53d896ea79a40c4f1b1159e2a91d7a33291864488
+git-http-backend.exe,Git v2.54.0.1,6,369b009bdf36eb97d3c590d96f68d1323d910c19ceff526aa33d6b186ef9503b
+git-daemon.exe,Git v2.54.0.1,6,4b33e90cf09b3edb681513084400f5265ee682ae6111ba651e86cee3dd2a9ddb
+git.exe,Git v2.54.0.1,6,cab4c4eea1d869cf9f7be73868dc9a90ad2df1b1b673e5f8c8714a576c25ea96
+getopt.exe,getopt v0.0.0.0,4,
+find.exe,find v0.0.0.0,4,
+file.exe,file v0.0.0.0,7,9c765a82bd2060936e562cb216107fb5611f865ec64ce9b55116cf606bbc15e4
+expr.exe,expr v0.0.0.0,5,
+env.exe,env v0.0.0.0,4,
+echo.exe,echo v0.0.0.0,4,
+dirname.exe,dirname v0.0.0.0,4,
+diff3.exe,diff3 v0.0.0.0,4,
+diff.exe,diff v0.0.0.0,4,
+date.exe,date v0.0.0.0,4,
+cut.exe,cut v0.0.0.0,4,
+cp.exe,cp v0.0.0.0,4,
+comm.exe,comm v0.0.0.0,4,
+CodeCoverage.exe,Microsoft® Visual Studio® v18.1.26126.712602,2,3f1641c3f2f944f177b6f961d25d5675c6064e74a053f171490cd0e9ab4365e5
+cmp.exe,cmp v0.0.0.0,4,
+cat.exe,cat v0.0.0.0,4,
+bscmake.exe,Microsoft® Visual Studio® v14.50.35729.0,3,239a84ac06e9e0656f2bb09cff3b0672ccc60da1e4f5cf75f7d449e77cfe6d76
+brotli.exe,brotli v0.0.0.0,4,
+basenc.exe,basenc v0.0.0.0,4,
+basename.exe,basename v0.0.0.0,4,
+b2sum.exe,b2sum v0.0.0.0,4,
+awk.exe,awk v0.0.0.0,9,
+ADelRCP.exe,ADelRCP Dynamic Link Library v26.1.21367.0,2,427f73c5ac9648b43487585882525bf83b40512d14f855c819702d45dbcbef1e
