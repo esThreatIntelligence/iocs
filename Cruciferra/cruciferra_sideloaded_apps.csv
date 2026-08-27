@@ -62,7 +62,7 @@ klist.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,1832f2c19297fc374270bc7764522688b2
 kinit.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,5329f60f30efaa4648e90c5bdc46e78cdf27c347a65a7eee0415be935b9e3156
 keytool.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,773c267d0e7c9e94c2fdd90aaae026940bab380a9eda9518353f5d27e00e0d0c
 jwebserver.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,5a6eca9994e99d69caec044583792b6d15eb6b083d4a549f29afff88dcfbe812
-jstat.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,794917d75c12c888e6750c2441d7f8fcdebef5deaed5d7f78d8fb46d51419ab4
+jstat.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,928b15876cc522f66440d020be148c91a53025cb5ff191bf7065be994c5763a8
 jstack.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,cfd51c3a24c964488aad7bdcdfc53201a40b9da65182bd5845b358facb906cfc
 jrunscript.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,282ec823882c4d4707b48673b820ba031af668dac316997174693a544747a562
 jps.exe,OpenJDK Platform 25.0.2 v25.0.2.0,2,aae5e7d8e54e9726361416d84f83177643a48195a48287dcb7fdb9aff978d120
