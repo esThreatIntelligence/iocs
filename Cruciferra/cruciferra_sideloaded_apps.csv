@@ -1,5 +1,6 @@
 Process Name,App Name,DLL Count,SHA256
 ws.exe,PDFescape Desktop v4.0.24.4617,88,f88a861823f995c48ddb7afe8f4be90a5d1ea5deff3df0b0c152fa0e5c2f1b65
+platform_experience_helper.exe,Google Chrome v150.0.7871.0,2,478ecf7dfe70fa5ae456fda7023d791fc4a6c1a1e41412dc8163717c614ae5f1
 platform_experience_helper.exe,Google Chrome v151.0.7877.0,2,1fae7d654695f7c4e0f4bb8a42a4c33137652effc360b998708c6ffcac1380e6
 msedgewebview2.exe,Microsoft Edge WebView2 v149.0.4022.69,33,e25226852835df592c11601b55e3b1e41c1308c07a395e298238d8a7365c1735
 msedge.exe,Microsoft Edge v149.0.4022.69,33,a0806567fa2e180cbb281e8f47d15b316527bdd58165f60769fb46bff91ec565
@@ -44,8 +45,8 @@ printf_gettext.exe,GNU gettext utilities v1.0,3,8c641d2265ccc2a1ba564a7baba279d9
 printf.exe,printf v0.0.0.0,4,dbc52ee41a9d2fc4cdad6d690e430c6b630ce5fb5837d66d6b47cf59ea63b198
 pluginviewer.exe,pluginviewer v0.0.0.0,3,ea0be557d1d24fc2f626792e6ee9944571a5bba58d8d7a4042699fdab3a8e1ed
 platform_experience_helper.exe,Google Chrome v150.0.7871.0,6,1fae7d654695f7c4e0f4bb8a42a4c33137652effc360b998708c6ffcac1380e6
-pgomgr.exe,Microsoft® Visual Studio® v14.44.35219.0,4,
-pgocvt.exe,Microsoft® Visual Studio® v14.44.35219.0,4,
+pgomgr.exe,Microsoft® Visual Studio® v14.44.35219.0,4,7dd64ea79dae13e63be99133b52e88a8ebd869f08b70994c9a6a587181a66a20
+pgocvt.exe,Microsoft® Visual Studio® v14.44.35219.0,4,401d6c25a06df63fbc4e729e6275909e77f67a84ce46e7f1be7116ac8eef2c52
 pathchk.exe,pathchk v0.0.0.0,4,36afccc7251e0b1a5b2a7c54fe022d13a122c2479028b0f01e653084e79281e9
 mv.exe,mv v0.0.0.0,4,0e990f9314e17eaf2eed168561313e0b6e1d21daf8fb6400387026c6da7277a1
 msvsmon.exe,Microsoft® Visual Studio® v18.5.10309.885011709.182,4,
