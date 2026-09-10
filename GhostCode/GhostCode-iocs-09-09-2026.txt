@@ -1,0 +1,117 @@
+Domain:
+
+flipbookviewer[.]us - Relay / decoy PDF host
+flipbookonlinevault[.]com - Relay / decoy PDF host
+account-access-rc3uenqi.elitechiropracticandrehab[.]com - Main kit host (compromised site)
+account-access-thlwvhxo.cxxzf[.]com - Main kit host (compromised site)
+account-access-unlcjkmj.androidpreneur[.]com - Main kit host (compromised site)
+saml-access-bgzdiwai.pelicol[.]com - Main kit host (compromised site)
+saml-access-hjg5zb1m.schuelerhvac[.]com - Main kit host (compromised site)
+saml-access-fgphrx1b.geefjelevenkleur[.]com - Main kit host (compromised site)
+saml-access-0yni8zkk.deltarstar[.]com - Main kit host (compromised site)
+saml-access-qhtexulk.atomzilla[.]com - Main kit host (compromised site)
+saml-access-ebntirhn.followmyitems[.]com - Main kit host (compromised site)
+saml-access-umjn1zxd.vnamecard[.]com - Main kit host (compromised site)
+saml-access-whwhikxl.lygdhc[.]com - Main kit host (compromised site)
+saml-access-4ejlnged.cciwedding[.]com - Main kit host (compromised site)
+saml-access-vdjnpebo.alltoyotatrucksuvparts[.]com - Main kit host (compromised site)
+onestep-access-aosbgdan.tv-appspot[.]com - Main kit host (compromised site)
+signin-access-3qbuumoo.alltoyotatrucksuvparts[.]com - Main kit host (compromised site)
+session-access-hrh9axw6.androidpreneur[.]com - Main kit host (compromised site)
+signin-access-ltcpr2s7.breakingpandora[.]com - Main kit host (compromised site)
+secure-access-ht0ysxlq.alltoyotatrucksuvparts[.]com - Main kit host (compromised site)
+verify-access-umjlvvrx.alltoyotatrucksuvparts[.]com - Main kit host (compromised site)
+signin-access-bpbippyw.geefjelevenkleur[.]com - Main kit host (compromised site)
+mfa-access-pyvxbnjc.atomzilla[.]com - Main kit host (compromised site)
+signin-access-whtc5iq4.accudiodesign[.]com - Main kit host (compromised site)
+authenticate-access-unb5gtsf.xhscyp[.]com - Main kit host (compromised site)
+validate-access-kgcdauwc.xhscyp[.]com - Main kit host (compromised site)
+verify-access-6dlrv01r.adogabroad[.]com - Main kit host (compromised site)
+identity-access-1w2m8s2x.arlingtonhousecleaning[.]com - Main kit host (compromised site)
+bjssourcing[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+ingredlon[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+pantera-energy[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+rpgsurfacepreps[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+rapidlntermodal[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+bochacornpany[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+carkeysexpres[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+thlnk-arc[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+evollvtechnology[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+360apartmentrenovation[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+abswaranty[.]net - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+alllitematerial[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+pirctobln[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+greenlightdlstribution[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+aceshopequlpment[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+chayahconsulting-group[.]net - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+douglasdynarnics[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+frugeseafoods[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+craecominc[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+njjutb[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+nyrnetroglass[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+asllancorporation[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+ptpttx[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+patriothealthpartner[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+orchadmedicalmgt[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+houchems[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+janlssary[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+ankerrpak[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+kinaaxis[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+plescla-cd[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+versaterrm[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+inflnity-tx[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+kwservlces[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+performanceservlces[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+crvsurveilance[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+salisburymore[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+dernaeng[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+laseroilfleld[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+tealc0n[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+curtiinco[.]com - Lookalike domain impersonating legitimate business. Possible relation to bjssourcing[.]com based on shared attributes
+
+Phone:
+
+(305) 901-0829 - VOIP number in email signature (Bandwidth carrier, Miami FL)
++1.2175236231 - VOIP number in domain WHOIS registrant (ONVOY LLC, Springfield IL)
+
+Email:
+
+<redacted>@reliantelectricco[.]com - Suspected compromised identity used for bjssourcing[.]com domain registration
+
+IP:
+
+5[.]230[.]71[.]51 - Frankfurt DE IP used for final Intune enrollment step
+151[.]225[.]227[.]193 - Proxy observed in attacks
+176[.]253[.]248[.]175 - Proxy observed in attacks
+94[.]9[.]97[.]142 - Proxy observed in attacks
+86[.]132[.]13[.]219 - Proxy observed in attacks
+81[.]96[.]174[.]54 - Proxy observed in attacks
+90[.]215[.]55[.]70 - Proxy observed in attacks
+92[.]40[.]47[.]84 - Proxy observed in attacks
+82[.]33[.]39[.]74 - Proxy observed in attacks
+
+File:
+
+870ed09a1dcd95f6d962ae82e348770c0843c76c3a6d4d989e3ab8288726e947 - Initial lure HTML attachment (password: BJ%800River)
+cd84fca18f5f8b388c1c0f60ce60123b1b650925f43d9a0b6629cb21ccaee729 - Decoy document - BJs Wholesale NDA.pdf
+
+User-Agent:
+
+python-requests/2.34.2 - Attacker post-compromise tooling
+
+URI Path:
+
+/api/harvester?action= - Kit-side harvester API (actions: geoip, get_code, poll)
+/api/harvester/load?t= - Session init path (t param is a session bearer token)
+/api/turnstile/verify - Kit-internal Turnstile verification
+/scanna/file001// - Decoy document delivery path pattern
+/<43-char-base64url-token> - Per-campaign victim URL path, hard-coded in AES-GCM ciphertext before delivery
+
+Cookie:
+
+tk_ses= - Kit session cookie name (unique per-session token, kit-specific)
+selected_template=nda2 - Kit template identifier - pivot for related campaigns (implies variants nda1, nda3, etc.)
+
+Turnstile Sitekey:
+
+0x4AAAAAAD19zwvN6VXHxBmE - Cloudflare Turnstile site key registered to kit
